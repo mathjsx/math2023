@@ -1,0 +1,88 @@
+<button class="bg-blue-500 text-white rounded-full"><a class="text-white" href="#bab1">01</a></button>
+<button class="bg-blue-500 text-white rounded-full"><a class="text-white" href="#bab2">02</a></button>
+<button class="bg-blue-500 text-white rounded-full"><a class="text-white" href="#bab3">03</a></button>
+<button class="bg-blue-500 text-white rounded-full"><a class="text-white" href="#bab4">04</a></button>
+<button class="bg-blue-500 text-white rounded-full"><a class="text-white" href="#bab5">05</a></button>
+<button class="bg-blue-500 text-white rounded-full"><a class="text-white" href="#bab6">06</a></button>
+<button class="bg-blue-500 text-white rounded-full"><a class="text-white" href="#bab7">07</a></button>
+<button class="bg-blue-500 text-white rounded-full"><a class="text-white" href="#bab8">08</a></button>
+<button class="bg-blue-500 text-white rounded-full"><a class="text-white" href="#bab9">09</a></button>
+<button class="bg-blue-500 text-white rounded-full"><a class="text-white" href="#bab10">10</a></button>
+<button class="bg-blue-500 text-white rounded-full"><a class="text-white" href="#bab11">11</a></button>
+<button class="bg-blue-500 text-white rounded-full"><a class="text-white" href="#bab12">12</a></button>
+<button class="bg-blue-500 text-white rounded-full"><a class="text-white" href="#bab13">13</a></button>
+<button class="bg-blue-500 text-white rounded-full"><a class="text-white" href="#bab14">14</a></button>
+
+	  
+<!-- 
+
+	  <div class="modal-button-container">
+	<button style=" background-color: rgba(25, 233, 136, 0.753);" ><a href="indextrigonometri.html"><h3>TRIGONOMETRI</h3></a></button>
+	<button style=" background-color: rgb(163, 140, 194);"><a href="indexmatrik.html"><h3>MATRIK</h3></a>
+	<button style=" background-color: rgb(224, 158, 114);"><a href="indexvektor.html"><h3>VEKTOR</h3></a> </button>
+	</div> -->
+<!-- 
+<form name="submit-to-google-sheet">
+<br>
+	<div class="modal-button-container">
+	<input  name="nama" type="text" placeholder="Isi nama anda " required >
+	<input  name="score" type="text"  value="" id="player-score-form" readonly >
+     <button type="submit" class="btn btn-primary btn-kirim " > Simpan </button> 
+     <button class="btn btn-primary btn-loading d-none " disabled>
+            
+            Loading..
+    </button>
+  
+   
+	
+	</div>
+<div class="alert alert-success alert-dismissible d-none my-alert">
+    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    <strong>Success!</strong> nilai anda sudah tersimpan, lihat tabel score.
+  </div>
+
+</form> -->
+<!-- <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz45F8SMN9OXopec06yeCpeUOKmixCvxEcOoZrU67GtJt01LwfY5Hh69AfqxghqFq2ATQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const btnKirim = document.querySelector('.btn-kirim');
+    const btnLoading = document.querySelector('.btn-loading');
+    const myAlert= document.querySelector('.my-alert');
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      btnKirim.classList.toggle('d-none');
+    btnLoading.classList.toggle('d-none');
+      myAlert.classList.toggle('d-none');
+
+
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>
+        {
+            btnKirim.classList.toggle('d-none');
+            btnLoading.classList.toggle('d-none');
+            myAlert.classList.toggle('d-none');
+            form.reset();
+            playerScore = 0;
+            console.log('Success!', response)
+        } )
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script> -->
+      
+<form name="submit-to-google-sheet">
+    <br>
+        <div class="modal-button-container">
+        <input style="font-size: 1.2rem; width: 250px" name="nama" type="text" placeholder="Isi nama anda " required >
+        <input style="text-align: center; font-size: 1.2rem; width: 100px;" name="score" type="text"  value="" id="player-score-form"  readonly>
+        
+    <button type="submit" class="btn btn-primary btn-kirim " > Simpan </button>
+    <button class="btn btn-primary btn-loading d-none " disabled>
+        
+        Loading..
+      </button>
+    <!-- <input name="email" type="email" placeholder="Email" required> -->
+        </div>
+    
+    
+    </form>
+    
